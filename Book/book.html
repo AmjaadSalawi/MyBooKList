@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="book"> 
+        <div class="head">
+            <h2>My<span>BooK</span>List</h2>
+        </div>
+
+
+        <div class="inputs">
+            <input type="text" id="bookTitle" placeholder="Book Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="number" id="price" placeholder="Price">
+            <input type="number" id="quantity" placeholder="Quantity">  
+            <button id="submit"> Add Book</button>
+        </div>
+
+
+        <div class="outputs">
+            <div class="searchBlock">
+                <input type="text" id="search" placeholder="Search">
+                <div class="btnSearch">
+                    <button onclick="getSearchMood(this.id)" id="searchId" placeholder="Search By Id"> Search By Id</button>
+                    <button onclick="getSearchMood(this.id)" id="searchTitle" placeholder="Search By Title"> Search By Title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchAuthor" placeholder="Search By Author"> Search By Author</button>
+                </div>
+            </div>
+            <div id="deleteAll"></div>
+
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>book title</th>
+                    <th>author</th>
+                    <th>price</th>
+                    <th>quantity</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+        
+        
+    </div>
+
+
+    <script src="book.js"></script>
+</body>
+</html>
